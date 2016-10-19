@@ -2,8 +2,8 @@ grocery_list = ["carrots", "toilet paper", "apples", "salmon", "eggplant"]
 
 #1. for each grocery list item, put an asterik next to the name, and use this as a method
 def shop (list)
-  list.each do |list|
-  puts "*" + "#{list}"
+  list.each do |item|
+  puts "*" + "#{item}"
   end
 end
 
@@ -19,10 +19,10 @@ puts "Now, you have #{grocery_list.length} items to collect"
 #3 Check to see if your list includes "bananas". If it does, output "You need to pick up bananas".
 # Otherwise, output "You don't need to pick up bananas today".
 
-if grocery_list.include? ("bananas") == true
-    then puts "You don't need to pick up bananas today"
-  else false
-    puts "You need to pick up bananas"
+if grocery_list.include?("bananas") == true
+    puts "on the list, You need to pick up bananas"
+  else
+    puts "NOT on the list, You don't need to pick up bananas today"
 end
 
 #4 Display the second item in the list
